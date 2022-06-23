@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function myDisplaying() {
+            var firstName = document.getElementById("fname").value;          
+            var lastName = document.getElementById("lname").value;
+            var yourHeight = document.getElementById("height").value;
+            var yourOrigin = document.getElementById("country").value;
+
+            var message = firstName + ' ' + lastName + " of height-" + " " + yourHeight + " and of country-  " +  " " + yourOrigin +  " Welcome! You are subscribed now!";
+            document.getElementById('displayText').textContent = message;
+             
+        }
+    </script>
+</head>
+<body> 
+    <label for="'fname">First Name</label>
+    <input type="text" id="fname" /> <br /> <br />
+
+    <label for="'lname">Lastt Name</label>
+    <input type="text" id="lname" />
+
+    <h3>What is your height?</h3>
+    <input id="height">
+    <h3>Where are you from?</h3>
+    <input type=text id="country"> <br /> <br />
+
+    <button  onclick="myDisplaying()">Submit</button> <br /> <br />
+    <span id="displayText">
+
+    </span>
+   
+     
+</body>
+</html>
